@@ -10,6 +10,7 @@
 	z-index: 99998;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	visibility: hidden;
 }
 .admin-bar #thsp-sticky-header {
 	top: 32px;
