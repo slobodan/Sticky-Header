@@ -3,7 +3,7 @@
 	$(document).ready(function () {
 		thsp_sticky_header();
 	});
-	
+
 	$(window).scroll(function () {
 		thsp_sticky_header();
 	});
@@ -11,15 +11,17 @@
 	$(window).resize(function () {
 		thsp_sticky_header();
 	});
-	
+
 	function thsp_sticky_header() {
 		// Check browser window width
 		if ($(window).scrollTop() > StickyHeaderParams.show_at && $(window).width() > StickyHeaderParams.hide_if_narrower) {
 			// Show
-			$('#thsp-sticky-header').stop().animate({"margin-top": '0'}, 50);
+			$('#thsp-sticky-header').stop().css({"visibility":"visible"});
+			$('#thsp-sticky-header').stop().animate({"margin-top": '0'}, 100);
 		} else {
 			// Hide
-			$('#thsp-sticky-header').stop().animate({"margin-top": '-200'}, 50);
+			$('#thsp-sticky-header').stop().css({"visibility":"hidden"});
+			$('#thsp-sticky-header').stop().animate({"margin-top": '-200'}, 60);
 		}
 	}
 }(jQuery));
