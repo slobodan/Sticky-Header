@@ -17,11 +17,11 @@
 		if ($(window).scrollTop() > StickyHeaderParams.show_at && $(window).width() > StickyHeaderParams.hide_if_narrower) {
 			// Show
 			$('#thsp-sticky-header').stop().css({"visibility":"visible"});
-			$('#thsp-sticky-header').stop().animate({"margin-top": '0'}, 100);
+			$('#thsp-sticky-header').stop().animate({"margin-top": '0'}, 50);
 		} else {
 			// Hide
 			$('#thsp-sticky-header').stop().css({"visibility":"hidden"});
-			$('#thsp-sticky-header').stop().animate({"margin-top": '-200'}, 60);
+			$('#thsp-sticky-header').stop().animate({"margin-top": '-200'}, 50);
 		}
 	}
 }(jQuery));
